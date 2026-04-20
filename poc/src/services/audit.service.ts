@@ -9,21 +9,21 @@ const logger = {
 
 export const requestAudit = new AuditLoggerService({
   mode: "request",
-  logPath: join(__dirname, "../audit/logs/request-audit.log"),
+  logPath: join(__dirname, "../../audit/logs/request-audit.log"),
   archiveMode: "daily",
   logger,
 });
 
 export const securityAudit = new AuditLoggerService({
   mode: "security",
-  logPath: join(__dirname, "../audit/logs/security-audit.log"),
+  logPath: join(__dirname, "../../audit/logs/security-audit.log"),
   archiveMode: "daily",
   logger,
 });
 
 export const debugAudit = new AuditLoggerService({
   mode: "debug",
-  logPath: join(__dirname, "../audit/logs/debug-audit.log"),
+  logPath: join(__dirname, "../../audit/logs/debug-audit.log"),
   enabled: true,
   archiveMode: "none",
   logger,

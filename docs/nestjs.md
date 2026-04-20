@@ -13,19 +13,19 @@ import { AuditLoggerService } from "@naskot/node-audit-logger";
 export class AppAuditService {
   readonly requestAudit = new AuditLoggerService({
     mode: "request",
-    logPath: join(process.cwd(), "data", "logs", "request-audit.log"),
+    logPath: join(__dirname, "../audit/logs/request-audit.log"),
     archiveMode: "daily",
   });
 
   readonly securityAudit = new AuditLoggerService({
     mode: "security",
-    logPath: join(process.cwd(), "data", "logs", "security-audit.log"),
+    logPath: join(__dirname, "../audit/logs/security-audit.log"),
     archiveMode: "daily",
   });
 
   readonly debugAudit = new AuditLoggerService({
     mode: "debug",
-    logPath: join(process.cwd(), "data", "logs", "debug-audit.log"),
+    logPath: join(__dirname, "../audit/logs/debug-audit.log"),
     enabled: process.env.DISPLAY_DEBUG === "1",
     archiveMode: "none",
   });

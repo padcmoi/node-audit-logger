@@ -57,7 +57,9 @@ async function bootstrap() {
   });
 
   const server = app.listen(0, () => {
-    console.info("POC audit logger started");
+    const address = server.address();
+    const port = typeof address === "object" && address ? address.port : "unknown";
+    console.info(`POC audit logger started on port ${port}`);
   });
 
   const shutdown = () => {
