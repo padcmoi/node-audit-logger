@@ -1,6 +1,6 @@
 # Changelog
 
-## [Unreleased] - yyyy-mm-dd
+## [1.0.0] - 2026-04-20
 
 - Refactor: move to per-instance architecture (`mode` + `logPath` + `archiveMode`) instead of one service with 3 fixed paths.
 - Add `AuditLoggerService` instance modes: `request`, `security`, `debug`.
