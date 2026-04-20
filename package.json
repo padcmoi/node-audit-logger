@@ -1,6 +1,6 @@
 {
   "name": "@naskot/node-audit-logger",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A tiny Node.js audit logger for request, security and debug traces.",
   "repository": {
     "type": "git",
