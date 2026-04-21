@@ -101,5 +101,5 @@ jobs:
             exit 0
           fi
           echo "OIDC publish failed."
-          echo "Fix: configure npm Trusted Publisher for @naskot/node-audit-logger or add NPM_TOKEN secret."
+          echo "Fix: configure npm Trusted Publisher for @naskot/node-audit-logger-core or add NPM_TOKEN secret."
           exit 1

@@ -1,29 +1,10 @@
-import {
-  appendFileSync,
-  chmodSync,
-  existsSync,
-  mkdirSync,
-  readFileSync,
-  readdirSync,
-  renameSync,
-  unlinkSync,
-  writeFileSync,
-} from "node:fs";
+import { appendFileSync, chmodSync, existsSync, mkdirSync, readFileSync, readdirSync, renameSync, unlinkSync, writeFileSync } from "node:fs";
 import { basename, dirname, join } from "node:path";
 import { DEFAULT_PURGE_MAX_AGE_MS } from "./constants";
 import { FileAppendQueue } from "./file-queue";
 import { resolveRemoteIpFromRequest } from "./ip";
 import { dateISO, dateNowMs } from "./time";
-import type {
-  AuditArchiveMode,
-  AuditLogInstanceOptions,
-  AuditLogger,
-  AuditMode,
-  HttpRequestLike,
-  HttpResponseLike,
-  NextLike,
-  PurgeArchivesOptions,
-} from "./types";
+import type { AuditArchiveMode, AuditLogInstanceOptions, AuditLogger, AuditMode, HttpRequestLike, HttpResponseLike, NextLike, PurgeArchivesOptions } from "./types";
 
 export class AuditLoggerService {
   private readonly logPath: string;
@@ -146,11 +127,7 @@ export class AuditLoggerService {
         const status = response.statusCode ?? 200;
         const durationMs = this.nowMs() - startedAt;
 
-        const line =
-          `${ts} ${ip} ` +
-          `proto=${protocol} ` +
-          `method=${method} url=${url} ` +
-          `status=${status} duration=${durationMs}ms\n`;
+        const line = `${ts} ${ip} ` + `proto=${protocol} ` + `method=${method} url=${url} ` + `status=${status} duration=${durationMs}ms\n`;
 
         this.appendLine(line, "requestAudit");
       });

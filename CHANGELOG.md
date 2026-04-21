@@ -1,5 +1,9 @@
 # Changelog
 
+## [Unreleased] - yyyy-mm-dd
+
+- Rename package/repo after an npm registry issue.
+
 ## [1.0.0] - 2026-04-20
 
 - Refactor: move to per-instance architecture (`mode` + `logPath` + `archiveMode`) instead of one service with 3 fixed paths.

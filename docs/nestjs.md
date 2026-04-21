@@ -7,7 +7,7 @@
 ```ts
 import { Injectable } from "@nestjs/common";
 import { join } from "node:path";
-import { AuditLoggerService } from "@naskot/node-audit-logger";
+import { AuditLoggerService } from "@naskot/node-audit-logger-core";
 
 @Injectable()
 export class AppAuditService {

@@ -11,7 +11,7 @@ async function bootstrap() {
   app.use(requestAudit.requestAudit);
 
   app.get("/", (_req, res) => {
-    res.json({ ok: true, service: "node-audit-logger-poc" });
+    res.json({ ok: true, service: "node-audit-logger-core-poc" });
   });
 
   app.post("/debug", (req, res) => {
