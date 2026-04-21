@@ -1,5 +1,9 @@
 # Changelog
 
+## [Unreleased] - yyyy-mm-dd
+
+- fix(registry): restore npm package visibility
+
 ## [1.0.1] - 2026-04-21
 
 - Rename package/repo after an npm registry issue.
