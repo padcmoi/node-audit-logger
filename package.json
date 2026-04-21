@@ -1,14 +1,14 @@
 {
-  "name": "@naskot/node-audit-logger",
-  "version": "1.0.0",
+  "name": "@naskot/node-audit-logger-core",
+  "version": "1.0.1",
   "description": "A tiny Node.js audit logger for request, security and debug traces.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/padcmoi/node-audit-logger"
+    "url": "https://github.com/padcmoi/node-audit-logger-core"
   },
-  "homepage": "https://github.com/padcmoi/node-audit-logger",
+  "homepage": "https://github.com/padcmoi/node-audit-logger-core",
   "bugs": {
-    "url": "https://github.com/padcmoi/node-audit-logger/issues"
+    "url": "https://github.com/padcmoi/node-audit-logger-core/issues"
   },
   "license": "MIT",
   "type": "module",

@@ -1,5 +1,5 @@
 import { join } from "node:path";
-import { AuditLoggerService } from "@naskot/node-audit-logger";
+import { AuditLoggerService } from "@naskot/node-audit-logger-core";
 
 const logger = {
   info: (message: string, meta?: unknown) => console.info(message, meta ?? ""),

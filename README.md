@@ -1,4 +1,4 @@
-# @naskot/node-audit-logger
+# @naskot/node-audit-logger-core
 
 Node.js audit logger based on reusable instances.
 
@@ -11,7 +11,7 @@ Node.js audit logger based on reusable instances.
 ## Install
 
 ```bash
-npm i @naskot/node-audit-logger
+npm i @naskot/node-audit-logger-core
 ```
 
 ## Official Documentation

@@ -1,9 +1,4 @@
-export {
-  DEFAULT_DEBUG_AUDIT_LOG_PATH,
-  DEFAULT_PURGE_MAX_AGE_MS,
-  DEFAULT_REQUEST_AUDIT_LOG_PATH,
-  DEFAULT_SECURITY_AUDIT_LOG_PATH,
-} from "./constants";
+export { DEFAULT_DEBUG_AUDIT_LOG_PATH, DEFAULT_PURGE_MAX_AGE_MS, DEFAULT_REQUEST_AUDIT_LOG_PATH, DEFAULT_SECURITY_AUDIT_LOG_PATH } from "./constants";
 export { createDebugAudit } from "./debug-audit";
 export { createRequestAudit } from "./request-audit";
 export { createSecurityAudit } from "./security-audit";

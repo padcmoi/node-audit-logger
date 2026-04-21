@@ -14,7 +14,7 @@ Service file path:
 
 ```ts
 import { join } from "node:path";
-import { AuditLoggerService } from "@naskot/node-audit-logger";
+import { AuditLoggerService } from "@naskot/node-audit-logger-core";
 
 export const requestAudit = new AuditLoggerService({
   mode: "request",
@@ -96,7 +96,7 @@ debugAudit.purgeOldLogs();
 ## Factory Helpers
 
 ```ts
-import { createDebugAudit, createRequestAudit, createSecurityAudit } from "@naskot/node-audit-logger";
+import { createDebugAudit, createRequestAudit, createSecurityAudit } from "@naskot/node-audit-logger-core";
 
 const requestAudit = createRequestAudit({ archiveMode: "daily" });
 const securityAudit = createSecurityAudit({ archiveMode: "daily" });
